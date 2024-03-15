@@ -27,6 +27,7 @@ h2 {
 
 h3 {
     font-size: 30px;
+    line-height: 120%;
 }
 
 a {
@@ -45,10 +46,12 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 header h2 {
     margin-left: 5%;
+    padding: 2%;
 }
 
 nav {
@@ -101,10 +104,13 @@ section {
     width: 25%;
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    margin-right: 10%;
     text-align: center;
+}
+
+.section-title h2 {
+    margin: 5% 10% 5% 5%;
 }
 
 /* set width for second column in flexbox */
@@ -134,7 +140,7 @@ figcaption {
     padding: 10px;
     background-color: var(--light-color);
     /* opacity: 0.6; */
-    margin:auto;
+    margin: auto;
 }
 
 /* on hover, highlight card with increased opacity + border */
@@ -146,8 +152,8 @@ figure:hover {
 /* fills the given dimensions and clips image if needed */
 /* source: https://stackoverflow.com/questions/3029422/how-to-auto-resize-an-image-while-maintaining-aspect-ratio */
 .first-app img {
-    max-width: 625px;
-    max-height: 200px;
+    width: 625px;
+    height: 200px;
     object-fit: cover;
 }
 
