@@ -16,6 +16,9 @@
 h1 {
     font-size: 75px;
     color: var(--light-color);
+    text-wrap: wrap;
+    text-align: center;
+    
 }
 
 h2 {
@@ -75,7 +78,7 @@ nav a {
     height: 500px;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 0;
 }
 
@@ -101,6 +104,7 @@ section {
     justify-content: center;
     align-items: center;
     margin-right: 10%;
+    text-align: center;
 }
 
 .column {
@@ -136,9 +140,11 @@ figure:hover {
     border: 3px solid var(--banner-color);
 }
 
+/* fills the given dimensions and clips image if needed */
+/* source: https://stackoverflow.com/questions/3029422/how-to-auto-resize-an-image-while-maintaining-aspect-ratio */
 .first-app img {
-    width: 625px;
-    height: 200px;
+    max-width: 625px;
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -168,3 +174,30 @@ footer {
     align-items: center;
     font-style: italic;
 }
+
+@media screen and (max-width: 768px) {
+    /* make items into  */
+    header, section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header h2 {
+        margin: 0;
+    }
+
+    nav li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner img {
+        margin: 40px;
+    }
+
+    .section-title {
+        background-color: white;
+        min-width: 100%;
+    }
