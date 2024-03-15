@@ -1,19 +1,21 @@
 /* variables */
+/* color palette from https://colorhunt.co/palette/22283131363f76abaeeeeeee */
 :root {
-    --padding: 20px;
-    --font-light: #EEEEEE;
-    --font-dark: #222831;
+    --light-color: #EEEEEE;
+    --dark-color: #222831;
+    --accent-color: #76ABAE;
+    --banner-color: #31363F;
 }
 
 /* general styling */
 * {
     font-family: Helvetica, Arial, sans-serif;
-    color: var(--font-dark);
+    color: var(--dark-color);
 }
 
 h1 {
     font-size: 75px;
-    color: var(--font-light);
+    color: var(--light-color);
 }
 
 h2 {
@@ -21,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 a {
@@ -29,54 +31,54 @@ a {
     font-weight: bolder;
 }
 
+p {
+    height: fit-content;
+    color: var(--dark-color);
+}
+
 /* header */
 header {
-    background-color: #76ABAE;
+    background-color: var(--accent-color);
     display: flex;
     width: 100%;
     justify-content: space-between;
-    /* position: relative; */
 }
 
 header h2 {
-    margin: 10px 20px;
+    margin-left: 5%;
 }
 
 nav {
-    /* position: absolute; */
-    margin-right: 5%;
+    margin: 20px 5%;
     display: flex;
     align-items: center;
 }
 
 nav li {
     display: inline-block;
-    padding: 0 var(--padding);
+    padding: 0 20px;
     position: relative;
-    /* top: 50%; */
 }
 
 nav a {    
-    color: var(--font-light);
+    color: var(--light-color);
 }
 
 /* banner */
 .banner {
-    background-color: #31363F;
+    background-color: var(--banner-color);
     display: flex;
     height: 500px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
-    /* position: relative; */
 }
 
 .banner img {
     width: 250px;
     height: 250px;
-    /* position: absolute; */
-    box-shadow: 12px 12px 2px 1px #222831;
+    box-shadow: 12px 12px 2px 1px var(--dark-color);
     margin: 0 100px 0
  }
 
@@ -102,6 +104,7 @@ section {
     margin: 10px 5%;
 }
 
+/* my work */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -110,8 +113,20 @@ section {
 
 figure {
     margin: 12.5px;
+    position: relative;
 }
 
+figcaption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    padding: 10px;
+    background-color: var(--light-color);
+    opacity: 0.6;
+    margin:auto;
+}
+
+/* contact me */
 #contact ul {
     display: flex;
     align-items: center;
@@ -119,6 +134,17 @@ figure {
 }
 
 #contact a {
-    color: var(--font-dark);
+    color: var(--dark-color);
     font-size: 20px;
+}
+
+/* footer */
+footer {
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
 }
