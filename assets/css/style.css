@@ -63,6 +63,7 @@ nav li {
     position: relative;
 }
 
+/* on hover, highlight link */
 nav li:hover {
     background-color: var(--dark-color);
 }
@@ -78,7 +79,6 @@ nav a {
     height: 500px;
     align-items: center;
     justify-content: center;
-    /* flex-wrap: wrap; */
     margin: 0;
 }
 
@@ -107,12 +107,13 @@ section {
     text-align: center;
 }
 
+/* set width for second column in flexbox */
 .column {
     width: 60%;
     margin: 10px 5%;
 }
 
-/* my work */
+/* my work section */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -125,6 +126,7 @@ figure {
     opacity: 0.6;
 }
 
+/* position project title inside card */
 figcaption {
     position: absolute;
     bottom: 20px;
@@ -135,6 +137,7 @@ figcaption {
     margin:auto;
 }
 
+/* on hover, highlight card with increased opacity + border */
 figure:hover {
     opacity: 1;
     border: 3px solid var(--banner-color);
@@ -148,13 +151,14 @@ figure:hover {
     object-fit: cover;
 }
 
-/* contact me */
+/* contact me section */
 #contact ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* on hover, highlight link */
 #contact li:hover {
     background-color: var(--accent-color);
 }
@@ -175,8 +179,9 @@ footer {
     font-style: italic;
 }
 
+/* responsive layout when screen is 768px or under */
 @media screen and (max-width: 768px) {
-    /* make items into  */
+    /* make flex items into column */
     header, section {
         flex-direction: column;
         align-items: center;
