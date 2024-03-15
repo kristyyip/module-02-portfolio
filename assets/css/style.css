@@ -56,8 +56,12 @@ nav {
 
 nav li {
     display: inline-block;
-    padding: 0 20px;
+    margin: 0 20px;
     position: relative;
+}
+
+nav li:hover {
+    background-color: var(--dark-color);
 }
 
 nav a {    
@@ -114,6 +118,7 @@ section {
 figure {
     margin: 12.5px;
     position: relative;
+    opacity: 0.6;
 }
 
 figcaption {
@@ -122,8 +127,19 @@ figcaption {
     left: 0;
     padding: 10px;
     background-color: var(--light-color);
-    opacity: 0.6;
+    /* opacity: 0.6; */
     margin:auto;
+}
+
+figure:hover {
+    opacity: 1;
+    border: 3px solid var(--banner-color);
+}
+
+.first-app img {
+    width: 625px;
+    height: 200px;
+    object-fit: cover;
 }
 
 /* contact me */
@@ -131,6 +147,10 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#contact li:hover {
+    background-color: var(--accent-color);
 }
 
 #contact a {
