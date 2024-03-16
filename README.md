@@ -30,5 +30,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ## Deployed Application
 The project has been deployed [here](https://https://kristyyip.github.io/module-02-portfolio//).
 
-### Citations
+![Portfolio](assets/images/portfolio_screenshot.png)
+
+## Citations
 Reis, Sergio (2021). CSS. https://stackoverflow.com/questions/3029422/how-to-auto-resize-an-image-while-maintaining-aspect-ratio.
+
+University of Minnesota Coding Bootcamp. CSS. https://git.bootcampcontent.com/University-of-Minnesota/UofM-VIRT-FSF-PT-02-2024-U-LOLC-ENTG/-/blob/main/02-Advanced-CSS/01-Activities/11-Ins_CSS-Resets/assets/css/reset.css?ref_type=heads#L17.

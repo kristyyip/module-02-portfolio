@@ -1,9 +1,12 @@
+/* code adapted from https://git.bootcampcontent.com/University-of-Minnesota/UofM-VIRT-FSF-PT-02-2024-U-LOLC-ENTG/-/blob/main/02-Advanced-CSS/01-Activities/11-Ins_CSS-Resets/assets/css/reset.css?ref_type=heads#L17 */
+/* Resets the box size of every element */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Gives the body element a parent height to compare against */
 html {
   height: 100%;
 }
@@ -14,16 +17,11 @@ body {
   font-family: sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-size: 100%;
 }
 
-input, select, option, optgroup, textarea, button,
-pre, code {
-  font-size: 100%;
-  font-family: inherit;
-}
-
-ol, ul {
+/* Removes default bullet points from lists */
+ul {
   list-style: none;
 }
